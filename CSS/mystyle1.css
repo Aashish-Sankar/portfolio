@@ -1,0 +1,197 @@
+body{
+    margin: 5px;
+    border: 2px solid #000000;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: wheat;
+}
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #07cfbb;
+    width: 90%;
+    margin-left: 5px;
+    border-radius: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 2px;
+    font-variant: small-caps;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+
+    
+}
+
+.content{
+    display: table;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 96%;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    text-align: center;    
+    box-shadow: #000000;
+    box-shadow: 3px;
+    border: solid black;
+}
+
+
+
+#intro{
+    margin-top: 30px;
+}
+
+.content a{
+    text-decoration: none;
+    font-style: italic;
+    color:rgb(218, 22, 22);
+}
+
+.content:hover{
+    background-color: rgb(252, 209, 129);
+}
+
+footer{
+    color: rgb(0, 0, 0)!important;
+    background-color: #07cfbb!important;
+    margin-top: 16px!important;
+    text-align: center!important;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: block;
+    box-sizing: inherit;
+    border-radius: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+h2{
+    font-variant: small-caps;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #07cfbb;
+    font-family: Arial;
+    width: 9%;
+    margin-top: 43px;
+    border-radius:20px ;
+    border: solid black;
+    
+  }
+  
+
+ 
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar:hover .dropbtn {
+    background-color: rgb(220, 241, 181);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(220, 241, 181);
+    border: solid black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .navbar:hover .dropdown-content {
+    display: block;
+  }
+
+#navimg{
+    width: 35%;
+}
+
+@keyframes spring { 
+    0% { transform: scale(1) translateY(0); }
+    10% { transform: scale(1.2, 0.6); }
+    30% { transform: scale(0.8, 1.1) translateY(-20px); }
+    50% { transform: scale(1) translateY(0); }
+    100% { transform: translateY(0); }
+  }
+
+.spring{
+    display: inline-block;
+}
+
+.spring:hover{
+    animation: spring 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;   
+}
+
+.container{
+    position:relative;animation:animateleft 1s
+}
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+footer{
+    position:relative;animation:animatebottom 1s
+}
+
+@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+
+h1{
+    position:relative;animation:animatetop 01s
+}
+
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+.navbar{
+    animation:animatezoom 0.6s
+}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.dropdown-content{
+    animation:animatezoom 0.6s
+}
+@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.content:hover{
+    animation:fading 3s 
+}
+
+@keyframes fading{0%{opacity:0}50%{opacity:1}}
+
+a{
+    color: blue;
+}
+
+.content a{
+    position:relative;animation:animatebottom 1s
+}
+
