@@ -291,7 +291,7 @@ display: block;
   }
   section .container {
     background: rgba(0, 0, 0, 0.9);
-    padding: 40px;
+    padding: 50px;
   }
   @media (max-width: 768px) {
     section {
